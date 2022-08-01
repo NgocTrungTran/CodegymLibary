@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/80b3a46959.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="slogan"><img src="image/cglbr.jpg" id="logo"><marquee direction="right" id="marquee"><h1>KỶ LUẬT - NĂNG ĐỘNG - CẦU TIẾN</h1></marquee></div>
+        
+    <form>     
+        <div id="log">LOGIN</div>
+        <div class="imgcontainer">
+            <img src="image/avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <!-- <div class="who">
+            <h1>You are?</h1>
+            <div><button class="btnW" onclick="manager()">Manager</button></div>
+            <div><button class="btnW">Student</button></div>
+        </div> -->
+        <div class="container">
+            <label for="username"><b style="cursor: pointer;">Username</b></label>
+            <input type="text" placeholder="Enter username" id="username" onkeydown="pressEnter(event)">
+            <br><span class="warn" id="warnUse"></span>
+
+            <label for="password"><b style="cursor: pointer;">Password</b></label>
+            <input type="password" placeholder="Enter password" id="password" onkeydown="pressEnter(event)">
+            <!-- <i class="fa-solid fa-eye" id="eye"></i> -->
+            <br><span class="warn" id="warnPass"></span>
+
+            <button type="button" onclick="login()">Login</button>
+        </div>
+    </form>
+</body>
+
+</html>
+<script src="js/login.js"></script>

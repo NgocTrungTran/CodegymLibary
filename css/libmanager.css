@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    background-image: url("background.png");
+    background-size: 100%;
+}
+
+.container_m {
+    max-width: 100%;
+    margin: 5px auto;
+    padding: 20px;
+    block-size: auto;
+}
+ /* slogan */
+#slogan {
+    background-color: rgb(34, 5, 199);
+    color: #ffffff;
+    width: 100%;
+}
+
+#logo {
+    margin: auto;
+    width: 200px;
+    height: 80px;
+}
+
+#marquee {
+    color: white;
+    scroll-behavior: auto;
+    width: 1270px;
+    margin-bottom: 20px;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    /* background: transparent; */
+}
+
+#countBook {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 30px;
+    background-color: rgb(44, 20, 174);
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#warn {
+    background-color: red;
+    color: white;
+}
+
+.info {
+    display: flex;
+    margin: 10px auto;
+    width: 95%;
+    color: white;
+    padding: 5px;
+    background-color: rgb(44, 20, 174);
+    border-radius: 10px;
+}
+
+.info>label {
+    width: 150px;
+    background-color: rgb(44, 20, 174);
+    border-radius: 5px;
+}
+
+.info input {
+    border-radius: 5px;
+    width: 90%;
+    height: 50%;
+}
+
+#bookID,
+#lbookID {
+    margin-left: 10px;
+}
+
+#taskbar {
+    border: white;
+    background-color: rgb(44, 20, 174);
+}
+
+/* table */
+.table {
+    margin: auto;
+    padding: auto;
+}
+
+.table>thead>tr>th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.table>thead>tr>th {
+    background-color: rgb(44, 20, 174);
+    color: rgb(255, 255, 255);
+}
+
+.table>thead>tr>th:nth-child(1) {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.table>thead>tr>th:nth-child(2) {
+    width: 100px;
+    height: 30px;
+}
+
+.table>thead>tr>th:nth-child(3) {
+    width: 400px;
+    height: 30px;
+}
+
+.table>thead>tr>th:nth-child(4) {
+    width: 200px;
+    height: 30px;
+}
+
+.table>thead>tr>th:nth-child(5) {
+    width: 200px;
+    height: 30px;
+}
+
+.table>thead>tr>th:nth-child(6) {
+    width: 100px;
+    height: 30px;
+}
+
+.table>thead>tr>th:nth-child(7) {
+    width: 80px;
+    height: 30px;
+}
+
+.table>thead>tr>th:nth-child(8) {
+    width: 200px;
+    height: 30px;
+}
+
+/* button */
+#btnAdd {
+    width: 60px;
+    height: 30px;
+    color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: large;
+}
+
+#btnAdd:hover {
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.btn-change {
+    width: 30%;
+    border-radius: 5px;
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-change:hover {
+    width: 30%;
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    cursor: pointer
+}
+
+.btn-remove {
+    width: 30%;
+    border-radius: 5px;
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-remove:hover {
+    width: 30%;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    cursor: pointer
+}
+
+.btn-updata {
+    width: 30%;
+    border-radius: 5px;
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-updata:hover {
+    width: 30%;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    cursor: pointer
+}
+
+.btn-cancel {
+    width: 30%;
+    border-radius: 5px;
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-cancel:hover {
+    width: 30%;
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    cursor: pointer
+}
+
+.table>tbody>tr>td {
+    border-collapse: collapse;
+    padding: 3px;
+    border: 0.1px ridge #333;
+}
+
+.table>tbody>tr:nth-child(odd) {
+    background-color: rgb(193, 230, 254);
+}
+
+.table>tbody>tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+#warningID {
+    font-size: small;
+    color: red;
+    padding: 4px;
+}
+
+#warn {
+    margin-left: 10px;
+}
+
+.table-hovered>tbody>tr:hover {
+    background-color: #d5dbff;
+}
+
+/* Change */
+#form-control0 {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dashed #373737;
+    color: #252525;
+    width: 70px;
+
+}
+
+#form-control1 {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dashed #373737;
+    color: #252525;
+    width: 370px;
+}
+
+#form-control2 {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dashed #373737;
+    color: #252525;
+    width: 170px;
+}
+
+#form-control3 {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dashed #373737;
+    color: #252525;
+    width: 170px;
+}
+
+#form-control4 {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dashed #373737;
+    color: #252525;
+    width: 70px;
+}
+
+#form-control5 {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dashed #373737;
+    color: #252525;
+    width: 80px;
+}
+
+.d-none {
+    display: none;
+}
+
+#ico:hover {
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropbtn {
+    background-color: rgb(44, 20, 174);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: #d5dbff;
+    width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(151, 149, 149);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #015ea5;
+}
+
+/* precept */
+.precept {
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: rgb(44, 20, 174);
+    color: white;
+    border-radius: 20px;
+    box-shadow: black 5px 5px;
+    margin-top: 5px;
+}
+
+#preceptBook {
+    padding: 10px;
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+}
+
+#mrs {
+    padding: 5px;
+    text-align: right;
+    font-size: large;
+    font-weight: bolder;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+/* back to top */
+#myBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(44, 20, 174);
+    cursor: pointer;
+    width: 3%;
+    height: 6%;
+    border-radius: 30px;
+    opacity: 0.7;
+    font-size: 200%;
+}
+#myBtn:hover {
+    background-color: rgb(44, 20, 174);
+    color: white
+}

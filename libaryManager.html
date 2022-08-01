@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Manager!</title>
+    <link rel="shortcut icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/libmanager.css">
+    <script src="https://kit.fontawesome.com/80b3a46959.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container_m">
+        <div class="row">
+            <div id="slogan"><img src="image/cglbr.jpg" id="logo">
+                <marquee direction="right" id="marquee">
+                    <h1>KỶ LUẬT - NĂNG ĐỘNG - CẦU TIẾN</h1>
+                </marquee>
+            </div>
+            <div class="dropdown">
+                <div>
+                    <button class="dropbtn" onclick="manager()">Managers (click to Add)</button>
+                    <div class="dropdown-content">
+                        <a href="libaryManager.html">Books Management</a>
+                        <a href="#">Students Management</a>
+                        <a href="#">Plans Management</a>
+                    </div>
+                </div>
+            </div>
+            <div class="precept">
+                <p id="preceptBook">"Một cuốn sách thật sự hay sẽ dạy tôi nhiều điều hơn là đọc nó,
+                    tôi phải nhanh chóng đặt nó xuống, bắt đầu sống theo những điều nó chỉ dẫn.
+                    Điều mà tôi bắt đầu là bằng cách đọc, và khi tôi kết thúc thì sẽ bằng hành động."
+                </p>
+                <p id="mrs"><i>Henry David Thoreau</i></p>
+            </div>
+            <div class="info d-none">
+                <div class="input">
+                    <label for="bookID" id="lbookID">Book Id</label>
+                    <input type="text" id="bookID" placeholder="Enter BookID" onkeydown="pressEnter(event)">
+                    <span id="warningID"></span>
+                </div>
+                <div class="input">
+                    <label for="bookName">Book Name</label>
+                    <input type="text" id="bookName" placeholder="Enter Name" onkeydown="pressEnter(event)">
+                    <span id="warningName"></span>
+                </div>
+                <div class="input">
+                    <label for="bookAuthor">Book Author</label>
+                    <input type="text" id="bookAuthor" placeholder="Enter Author" onkeydown="pressEnter(event)">
+                </div>
+                <div class="input">
+                    <label for="bookTopic">Book Topic</label>
+                    <input type="text" id="bookTopic" placeholder="Enter Topic" onkeydown="pressEnter(event)">
+                </div>
+                <div class="input">
+                    <label for="bookPublishing">Book Publishing</label>
+                    <input type="number" id="bookPublishing" min="1450" max="2022" placeholder="Enter Publishing" onkeydown="pressEnter(event)">
+                </div>
+                <div class="input">
+                    <label for="bookLocation">Book Location</label>
+                    <input type="text" id="bookLocation" placeholder="Enter Location" onkeydown="pressEnter(event)">
+                </div>
+                <div>
+                    <button id="btnAdd" onclick="addBook()"><i class="fa-solid fa-square-plus"></i></button>
+                </div>
+            </div>
+            <div id="countBook"></div>
+        </div>
+        <div>
+            <table class="table table-hovered">
+                <thead>
+                    <tr>
+                        <th>Serial</th>
+                        <th id="searchID">Book Id
+                            <i id="ico" class="fa-solid fa-magnifying-glass" title="search ID" onclick="searchID()"></i>
+                        </th>
+                        <th id="searchName">Book Name
+                            <i id="ico" class="fa-solid fa-magnifying-glass" title="search Name"
+                                onclick="searchName()"></i>
+                        </th>
+                        <th id="searchAuthor">Book Author
+                            <i id="ico" class="fa-solid fa-magnifying-glass" title="search Author"
+                                onclick="searchAuthor()"></i>
+                        </th>
+                        <th>Book Topic
+                            <!-- <i id="ico" class="fa-solid fa-filter" title="filter Topic" onclick="filterTopic()">
+                            <span id="filterTopic"></span>
+                            </i> -->
+                        </th>
+                        <th id="searchPublishing">Book Publishing
+                            <i id="ico" class="fa-solid fa-sort-down" title="Descending" onclick="sort('desc')"></i>
+                            <i id="ico" class="fa-solid fa-sort-up" title="Ascending" onclick="sort('asc')"></i>
+                        </th>
+                        <th id="searchLocation">Book Location
+                            <i id="ico" class="fa-solid fa-magnifying-glass" title="search Location"
+                                onclick="searchLocation()"></i>
+                        </th>
+                        <th>Manager</th>
+                        <!-- <th>Book Status </th> -->
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <button id="myBtn" title="Back to Top">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </div>
+</body>
+
+</html>
+<script src="js/libary.js"></script>

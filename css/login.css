@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-image: url("bgrcodegym.png");
+  background-size: 100%;
+  display: inline;
+}
+body {
+  display: inline;
+}
+
+
+form {
+  background-color:rgb(115, 114, 185);
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 100px;
+}
+#slogan {
+  background-color: rgb(44, 20, 174);
+  color: #ffffff;
+  width: 100%;
+}
+#log{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px rgb(150, 242, 244);
+}
+#logo {
+  margin: auto;
+  width: 10%;
+  height: 80px;
+}
+#marquee{
+  color: white;
+  scroll-behavior: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: rgb(44, 20, 174);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center; 
+}
+
+img.avatar {
+  margin-top: 5px;
+  width: 10%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.warn{
+  color: red;
+}
+.d-none{
+  display: none;
+}
+
+.who{
+  margin: auto;
+
+}
+.btnW{
+  width: 100%;
+  font-size: 20px;
+}
+.who h1{
+  margin: auto;
+  text-align: center;
+  color: white;
+}
